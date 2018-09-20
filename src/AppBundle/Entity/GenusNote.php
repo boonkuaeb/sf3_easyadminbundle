@@ -70,7 +70,7 @@ class GenusNote
             $filename = $this->getUserAvatarFilename();
         }
 
-        return static::AVATAR_FILE_PREFIX.$filename;
+        return static::AVATAR_FILE_PREFIX . $filename;
     }
 
     public function setUserAvatarFilename($userAvatarFilename)
@@ -111,5 +111,10 @@ class GenusNote
     public function getId()
     {
         return $this->id;
+    }
+
+    public function __toString()
+    {
+        return $this->note;
     }
 }
