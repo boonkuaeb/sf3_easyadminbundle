@@ -84,6 +84,8 @@ easy_admin:
     brand_color: '#81b9ba'
     assets:
       css: ['css/custom_backend.css']
+    templates:
+      field_id: 'admin/fields/_id.html.twig'
   list:
     title: 'List of %%entity_label%%'
     actions: ['show']
@@ -92,6 +94,8 @@ easy_admin:
       class: AppBundle\Entity\Genus
       label: Genuses
       help: Genuses are not covered under warranty!
+#      templates:
+#        field_id: 'admin/fields/_id.html.twig'
       list:
         help: Do not feed!
         actions:
