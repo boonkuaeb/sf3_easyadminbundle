@@ -115,6 +115,6 @@ class GenusNote
 
     public function __toString()
     {
-        return $this->note;
+        return (string) $this->getNote();
     }
 }

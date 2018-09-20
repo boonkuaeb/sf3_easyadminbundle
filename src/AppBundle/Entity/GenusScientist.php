@@ -80,6 +80,6 @@ class GenusScientist
 
     public function __toString()
     {
-        return $this->getGenus()->getName();
+        return (string) $this->getUser();
     }
 }
