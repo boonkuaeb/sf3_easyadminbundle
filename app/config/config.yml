@@ -112,6 +112,25 @@ easy_admin:
       search:
         help: null
         fields: ['id', 'name']
+      form:
+        fields:
+          -
+            property: id
+            type_options: {disabled: true}
+          - name
+          - speciesCount
+          - { property: 'funFact', type: 'textarea' }
+          - isPublished
+          - { property: 'firstDiscoveredAt', type_options: { widget: 'single_text' }}
+          - subFamily
+          - genusScientists
+      new:
+        fields:
+          - '-id'
+      edit:
+        fields:
+          - slug
+
     GenusHorde:
       class: AppBundle\Entity\Genus
       label: HORDE of Genuses 😱 !!!
