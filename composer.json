@@ -62,6 +62,9 @@
         "symfony-assets-install": "relative",
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
+        },
+        "symfony": {
+            "allow-contrib": "true"
         }
     }
 }
